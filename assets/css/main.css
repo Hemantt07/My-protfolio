@@ -242,12 +242,16 @@ footer .footer-main .footer-nav li .social-media a:hover {
 
 .main-content .left {
     background: #d06489;
+    justify-content: end;
+    display: flex;
+    padding: 0;
 }
 
 .main-content .left .profile {
     background-color: #eb7ba1;
     width: 50%;
-    margin: 100px -6% 100px 56%;
+    margin: 100px 0;
+    margin-right: -30px;
     padding: 50px 30px 0 30px;
     box-shadow: 0 3px 6px 0 #333232;
 }
@@ -258,6 +262,8 @@ footer .footer-main .footer-nav li .social-media a:hover {
 
 .main-content .left .profile .profile-photo img{
     border-radius: 50%;
+    display: block;
+    margin: auto;
 }
 
 .main-content .left .profile .profile-name h2{
