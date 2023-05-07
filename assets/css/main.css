@@ -63,16 +63,9 @@ header .top-header .main-logo {
     display: flex;
 }
 
-header .top-header .main-logo .name::before {
-    content: '';
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    background-color: var(--main);
-    border-radius: 100%;
+header .top-header .main-logo i {
+    color: var(--main);
     margin-right: 10px;
-    top: -3px;
-    position: relative;
 }
 
 header .top-header .main-logo .name {
@@ -156,6 +149,11 @@ header .top-header nav .nav-container {
     font-weight: 500;
 }
 
+.top-header .nav-container .navbar a.active,
+.top-header .nav-container .navbar a:hover {
+    color: #d06489;
+}
+
 .top-header .nav-container .navbar a span::after {
     content: '';
     width: 0%;
@@ -202,14 +200,20 @@ footer .footer-main .footer-nav li {
     font-size: 30px;
     font-family: 'roboto';
     text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+footer .footer-main .footer-nav li.social {
+    flex-direction: column;
 }
 
 footer .footer-main .footer-nav li a {
-    display: block;
+    display: inline;
     font-family: 'roboto';
     font-weight: normal;
     font-size: 15px;
-    margin-top: 5px;
+    margin-left: 15px;
     word-wrap: break-word;
 }
 
@@ -244,7 +248,7 @@ footer .footer-main .footer-nav li .social-media a:hover {
     background-color: #eb7ba1;
     width: 50%;
     margin: 100px -6% 100px 56%;
-    padding: 50px 30px;
+    padding: 50px 30px 0 30px;
     box-shadow: 0 3px 6px 0 #333232;
 }
 
@@ -278,16 +282,16 @@ footer .footer-main .footer-nav li .social-media a:hover {
 .main-content .left .social {
     background: #e5d1d1;
     position: relative;
-    left: -10px;
-    right: -10px;
+    left: -30px;
+    right: -30px;
     margin-top: 30px;
-    width: calc(100% + 20px);
+    width: calc(100% + 60px);
 }
 
 .main-content .left .social .social-media {
     display: flex;
     justify-content: space-around;
-    padding: 20px 0;
+    padding: 20px 40px;
 }
 
 .main-content .left .social .social-media a {
@@ -415,6 +419,7 @@ footer .footer-main .footer-nav li .social-media a:hover {
 
     footer .footer-main {
         flex-direction: column-reverse;
+        padding: 30px 0;
     }
 
     footer .footer-main .copyright {
@@ -425,6 +430,23 @@ footer .footer-main .footer-nav li .social-media a:hover {
 
     footer .footer-main .footer-nav li {
         margin-bottom: 20px;
+        flex-direction: column;
     }
 
+    footer .footer-main .footer-nav li a {
+        margin: 0;
+    }
+
+    footer .footer-main .footer-nav li .social-media li {
+        margin: 0;
+    }
+
+    .main-content .left .social {
+        background: #e5d1d1;
+        position: relative;
+        left: -10px;
+        right: -10px;
+        margin-top: 30px;
+        width: calc(100% + 20px);
+    }
 }
