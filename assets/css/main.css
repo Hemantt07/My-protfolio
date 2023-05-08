@@ -142,9 +142,13 @@ header .top-header nav .nav-container {
 }
 
 .top-header .nav-container .navbar a {
+    position: relative;
+}
+
+.top-header .nav-container .navbar a {
     font-size: 20px;
     color: #323232;
-    display: inline;
+    display: block;
     text-transform: uppercase;
     font-weight: 500;
 }
