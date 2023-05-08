@@ -19,7 +19,7 @@
 }
 
 :root {
-    --main: #d06489;
+    --main: #a9aacc;
 }
 
 * {
@@ -155,7 +155,7 @@ header .top-header nav .nav-container {
 
 .top-header .nav-container .navbar a.active,
 .top-header .nav-container .navbar a:hover {
-    color: #d06489;
+    color: #a9aacc;
 }
 
 .top-header .nav-container .navbar a span::after {
@@ -245,14 +245,14 @@ footer .footer-main .footer-nav li .social-media a:hover {
 }
 
 .main-content .left {
-    background: #d06489;
+    background: #a9aacc;
     justify-content: end;
     display: flex;
     padding: 0;
 }
 
 .main-content .left .profile {
-    background-color: #eb7ba1;
+    background-color: #c2c3e6;
     width: 50%;
     margin: 100px 0;
     margin-right: -30px;
@@ -290,7 +290,7 @@ footer .footer-main .footer-nav li .social-media a:hover {
 }
 
 .main-content .left .social {
-    background: #e5d1d1;
+    background: #fef8dd;
     position: relative;
     left: -30px;
     right: -30px;
@@ -452,7 +452,6 @@ footer .footer-main .footer-nav li .social-media a:hover {
     }
 
     .main-content .left .social {
-        background: #e5d1d1;
         position: relative;
         left: -10px;
         right: -10px;
