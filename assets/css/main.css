@@ -141,7 +141,7 @@ header .top-header nav .nav-container {
     width: 100%;
 }
 
-.top-header .nav-container .navbar a {
+.top-header .nav-container .navbar li {
     position: relative;
 }
 
