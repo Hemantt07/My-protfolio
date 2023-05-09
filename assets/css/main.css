@@ -18,6 +18,11 @@
     src: url(../fonts/Gruppo-Regular.ttf);
 }
 
+@font-face {
+    font-family: 'robotocondes';
+    src: url(../fonts/RobotoCondensed-Regular.ttf);
+}
+
 :root {
     --main: #a9aacc;
 }
@@ -48,6 +53,10 @@ ul, ol {
     list-style-type: none;
     margin: 0;
     padding: 0;
+}
+
+main#main {
+    display: flex;
 }
 
 /* header */
@@ -128,7 +137,8 @@ header .top-header nav .navbar-toggle.active span:first-child{
     margin: 0;
     transform: rotate(45deg);
     display: block;
-    margin-top: 70%;
+    top: 0;
+    position: absolute;
 }
 
 header .top-header nav .navbar-toggle.active span:last-child{
@@ -151,6 +161,7 @@ header .top-header nav .nav-container {
     display: block;
     text-transform: uppercase;
     font-weight: 500;
+    font-family: 'robotocondes';
 }
 
 .top-header .nav-container .navbar a.active,
@@ -161,8 +172,8 @@ header .top-header nav .nav-container {
 .top-header .nav-container .navbar a span::after {
     content: '';
     width: 0%;
-    height: 1px;
-    background: #323232;
+    height: 2px;
+    background: #a9aacc;
     position: absolute;
     top: 100%;
     right: 0px;
@@ -172,6 +183,11 @@ header .top-header nav .nav-container {
 .top-header .nav-container .navbar li:hover a span::after {
     width: 100%;
     left: 0px;
+}
+
+.top-header .nav-container .navbar a.active span::after {
+    width: 100%;
+    left: 0;
 }
 
 /* footer */
@@ -189,7 +205,7 @@ footer .footer-main {
 footer .footer-main .copyright {
     font-size: 20px;
     color: #fff;
-    font-family: 'roboto';
+    font-family: 'abel';
     font-weight: normal;
     padding-left: 20px;
 }
@@ -201,8 +217,8 @@ footer .footer-main .footer-nav {
 }
 
 footer .footer-main .footer-nav li {
-    font-size: 30px;
-    font-family: 'roboto';
+    font-size: 23px;
+    font-family: 'robotocondes';
     text-align: center;
     display: flex;
     align-items: center;
@@ -213,10 +229,9 @@ footer .footer-main .footer-nav li.social {
 }
 
 footer .footer-main .footer-nav li a {
-    display: inline;
-    font-family: 'roboto';
+    font-family: 'abel';
     font-weight: normal;
-    font-size: 15px;
+    font-size: 17px;
     margin-left: 15px;
     word-wrap: break-word;
 }
@@ -228,6 +243,7 @@ footer .footer-main .footer-nav li a:hover {
 footer .footer-main .footer-nav li .social-media {
     display: flex;
     justify-content: space-between;
+    margin-top: 15px;
 }
 
 footer .footer-main .footer-nav li .social-media li {
@@ -254,7 +270,7 @@ footer .footer-main .footer-nav li .social-media a:hover {
 .main-content .left .profile {
     background-color: #c2c3e6;
     width: 50%;
-    margin: 100px 0;
+    margin: 150px 0;
     margin-right: -30px;
     padding: 50px 30px 0 30px;
     box-shadow: 0 3px 6px 0 #333232;
@@ -290,7 +306,7 @@ footer .footer-main .footer-nav li .social-media a:hover {
 }
 
 .main-content .left .social {
-    background: #fef8dd;
+    background: #e4e4e4;
     position: relative;
     left: -30px;
     right: -30px;
@@ -311,13 +327,20 @@ footer .footer-main .footer-nav li .social-media a:hover {
 .main-content .right .who-i-am {
     padding: 30px 0;
     padding-left: 60px;
-    margin: 100px 0;
+    margin: 150px 0;
 }
 
 .main-content .right .who-i-am h2{
     font-family: 'roboto';
     font-size: 100px;
     font-weight: 700;
+}
+
+.main-content .right .who-i-am h6 {
+    font-family: 'roboto';
+    font-size: 30px;
+    font-weight: 700;
+    margin: 30px 0;
 }
 
 .main-content .right .who-i-am p {
@@ -329,18 +352,173 @@ footer .footer-main .footer-nav li .social-media a:hover {
     margin-top: 20px;
 }
 
+.btn-primary,
 .main-content .right .who-i-am .cta button {
-    font-size: 23px;
+    font-size: 18px;
     padding: 5px 20px;
-    color: #eb7ba1;
-    background-color: #000;
-    box-shadow: 0 3px 6px 0 #333232;
+    color: #282947;
+    font-family: 'robotocondes';
+    background-color: #e4e4e4;
+    box-shadow: 0px 2px 3px 0 #9e9e9e;
     margin-right: 10px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    border-color: transparent;
     transition: box-shadow .5s;
 }
 
+.btn-primary:hover,
 .main-content .right .who-i-am .cta button:hover {
     box-shadow: none;
+    background-color: #e4e4e4;
+    border-color: transparent;
+    color: #282947;
+}
+
+/* Resume page */
+section.contact,
+section.resume-section {
+    background-color: #a9aacc; 
+}
+
+
+.title {
+    font-size: 55px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 80px 0;
+}
+
+.title span {
+    display: block;
+    font-size: 20px;
+    text-transform: capitalize;
+    margin-top: 20px;
+}
+
+.head .sub-title {
+    display: flex;
+    align-items: center;
+    font-size: 35px;
+    font-family: 'robotocondes';
+}
+
+.head .sub-title::before {
+    content: '';
+    width:  25px;
+    height:  25px;
+    background-color: #000;
+    display: inline-block;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+
+.head .download-btn {
+    margin: auto;
+    display: block;
+    margin-right: 10px;
+}
+
+.content {
+    padding: 0 200px;
+}
+
+.content .content-block {
+    background: #fff;
+    padding: 50px 30px;
+    box-shadow: 0px 2px 3px 0 #9e9e9e;
+    margin-bottom: 30px;
+}
+
+.content .content-block .year {
+    font-size: 32px;
+    font-family: 'robotocondes';
+    margin-bottom: 20px;
+    padding: 0 10px;
+}
+
+.content .content-block .position {
+    font-size: 22px;
+}
+
+.head {
+    padding: 15px 0;
+    margin-bottom: 10px;
+}
+
+.content .content-block .details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+
+.content .content-block .details h2 {
+    font-family: 'robotocondes';
+    margin: 10px 0;
+}
+
+.content .content-block .details .company {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.content .content-block .location {
+    font-size: 13px;
+    font-family: 'robotocondes';
+    margin: 10px 0;
+}
+
+.content .content-block .location i{
+    margin-right: 10px;
+}
+
+.content .content-block .description p {
+    font-size: 16px;
+    padding: 10px;
+}
+
+.content .content-block .skill-list {
+    padding: 10px;
+    display: grid;
+    grid-template-rows: repeat(2, min-content);
+    grid-auto-flow: column;
+    list-style: disc;
+}
+
+.skill-list ::marker {
+    color: #a9aacc;
+}
+
+.content .content-block .skill-list .progress {
+    width: 50%;
+}
+
+.content .content-block .skill-list li {
+    font-size: 21px;
+    font-family: 'robotocondes';
+    margin: 5px 0;
+}
+
+.content .content-block .content-title{
+    font-size: 33px;
+    font-family: 'robotocondes';
+    font-weight: 600;
+}
+/* Contact form */
+
+.contact form.contact-me {
+    padding: 0 250px 100px;
+}
+
+.form-control {
+    border: 1px solid #e4e4e4;
+}
+
+.form-control:focus {
+    border: 1px solid #e4e4e4;
+    box-shadow: 0px 2px 3px 0 #9e9e9e;
+
 }
 
 @media screen and (max-width: 768px) {
@@ -372,18 +550,20 @@ footer .footer-main .footer-nav li .social-media a:hover {
 
     header .top-header .main-logo .name {
         font-size: 30px;
-        line-height: 22px;
+        line-height: 30px;
     }
 
     header .top-header .main-logo .name span {
         font-size: 20px;
+        display: block;
+        margin-left: 45px;  
     }
 
     header .top-header nav .navbar-toggle {
         display: flex;
         position: absolute;
         right: 10px;
-        top: 0;
+        top: 14px;
         height: 25px;
         padding: 0;
         transform: translateY(100%);
@@ -457,5 +637,19 @@ footer .footer-main .footer-nav li .social-media a:hover {
         right: -10px;
         margin-top: 30px;
         width: calc(100% + 20px);
+    }
+
+    .contact form.contact-me {
+        padding: 0 10px 30px;
+    }
+
+    .title {
+        margin: 40px 0;
+        font-size: 42px;
+    }
+
+    .title span {
+        margin-top: 10px;
+        font-size: 18px;
     }
 }

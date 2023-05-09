@@ -12,15 +12,16 @@
     
     <header class="container-fluid">
         <div class="top-header row">
-            <div class="main-logo col-md-6">
+            <div class="main-logo col-md-6 col-9">
                 <a href="index.html">
                     <p class="name">
+                        <i class="fa-solid fa-user"></i>
                         Hemant Dhiman<span> -Designer/Developer</span>
                     </p>
                 </a>
             </div>
             <nav class="col-md-4">
-                <div class="navbar-toggle">
+                <div class="navbar-toggle" id="nav-toggle">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -28,16 +29,16 @@
                 <div class="nav-container">
                     <ul class="navbar">
                         <li>
-                            <a href="about-me.html"><span>About Me</span></a>
+                            <a href="index.html" class=""><span>About Me</span></a>
                         </li>
                         <li>
-                            <a href="resume.html"><span>Resume</span></a>
+                            <a href="resume.html" class=""><span>Resume</span></a>
                         </li>
                         <li>
-                            <a href="projects.html"><span>Projects</span></a>
+                            <a href="projects.html" class=""><span>Projects</span></a>
                         </li>
                         <li>
-                            <a href="contact.html"><span>Contact</span></a>
+                            <a href="contact.html" class="active"><span>Contact</span></a>
                         </li>
                     </ul>
                 </div>
@@ -46,7 +47,43 @@
     </header>
 
     <main id="main">
-        
+        <section class="contact container-fluid">
+            <div class="container">
+                <h2 class="title">
+                    Contact Me
+                    <span>Will love to here from you</span>   
+                </h2>
+                
+                <form action="" class="contact-me">
+    
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="floatingPassword" name="name" placeholder="Your name..">
+                        <label for="floatingPassword">Your name...</label>
+                    </div>
+    
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="floatingInput" name="email" placeholder="Your email..">
+                        <label for="floatingInput">Your email...</label>
+                    </div>
+    
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="floatingPassword" name="subject" placeholder="Your subject..">
+                        <label for="floatingPassword">Your subject...</label>
+                    </div>
+    
+                    <div class="form-floating mb-3">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                        <label for="floatingTextarea2">Your message..</label>
+                    </div>
+    
+                    <div class="mb-3 justify-content-center d-flex">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+
+                </form>
+
+            </div>
+        </section>
     </main>
 
     <footer class="container-fluid">
@@ -57,25 +94,27 @@
                 </p>
             </div>
 
-            <div class="col-md-5">
-                <ul class="footer-nav">
-                    <li>
-                        Call <a href="tel(+91 8628948390)">8628948390</a>
+            <div class="col-md-6">
+                <ul class="footer-nav row">
+                    <li class="col-md-4 col-6">
+                        <i class="fa-solid fa-phone"></i>
+                        <a href="tel:+91 8628948390">8628948390</a>
                     </li>
-                    <li>
-                        Mail <a href="mailto:reshavbdhiman67@gmail.com">reshavdhiman67@gmail.com</a>
+                    <li class="col-md-4 col-6">
+                        <i class="fa-solid fa-envelope"></i>
+                        <a href="mailto:reshavbdhiman67@gmail.com">reshavdhiman67@gmail.com</a>
                     </li>
-                    <li>
+                    <li class="col-md-4 col-6 mx-auto social">
                         Follow
                         <ul class="social-media">
                             <li>
                                 <a href="#"><i class="fa-brands fa-twitter"></i></a>
                             </li>
                             <li>
-                                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                                <a href="#"><i class="fa-brands fa-linkedin-in"></i></i></a>
                             </li>
                             <li>
-                                <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                                <a href="#"><i class="fa-brands fa-facebook-f"></i></i></a>
                             </li>
                             <li>
                                 <a href="#"><i class="fa-brands fa-instagram"></i></a>
