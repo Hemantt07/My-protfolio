@@ -652,4 +652,49 @@ section.resume-section {
         margin-top: 10px;
         font-size: 18px;
     }
+
+    .content {
+        padding: 0;
+    }
+
+    .head {
+        padding: 5px 0;
+        margin: 0;
+    }
+    .head .sub-title {
+        font-size: 30px;
+        justify-content: center;
+    }
+
+    .head .sub-title::before {
+        width: 10px;
+        height: 10px;
+    }
+
+    .head .download-btn {
+        margin-right: auto;
+        margin-top: 10px;
+    }
+
+    .btn-primary, .main-content .right .who-i-am .cta button {
+        padding: 5px 13px;
+    }
+
+    .content .content-block {
+        padding: 20px 10px;
+        margin: 25px 10px;
+    }
+
+    .content .content-block .year,
+    .content .content-block .details,
+    .content .content-block .description,
+    .content .content-block .description p{
+        padding: 0%;
+        margin-bottom: 5px;
+    }
+
+    .content .content-block .skill-list {
+        padding: 10px;
+        grid-template-rows: repeat(6, min-content);
+    }
 }
