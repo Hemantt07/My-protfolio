@@ -521,6 +521,12 @@ section.resume-section {
 
 }
 
+@keyframes slideLeft {
+    from {
+
+    }
+}
+
 @media screen and (max-width: 768px) {
     header .top-header{
         padding: 20px 0%;
