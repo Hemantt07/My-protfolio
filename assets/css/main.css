@@ -407,6 +407,7 @@ footer .footer-main .footer-nav li .social-media a:hover {
 }
 
 /* Resume page */
+section.projects-section,
 section.contact,
 section.resume-section {
     background-color: #a9aacc; 
@@ -461,13 +462,27 @@ section.resume-section {
     margin-bottom: 30px;
 }
 
+.content .content-block .project-name,
 .content .content-block .year {
     font-size: 32px;
     font-family: 'robotocondes';
     margin-bottom: 20px;
     padding: 0 10px;
+    position: relative;
 }
 
+.content .content-block .project-name::before {
+    content: '';
+    height: 100%;
+    width: 8px;
+    background: #282947;
+    display: block;
+    position: absolute;
+    left: -30px;
+}
+
+
+.content .content-block .technology,
 .content .content-block .position {
     font-size: 22px;
 }
@@ -552,7 +567,15 @@ section.resume-section {
 
 }
 
+.projects-section {
+    box-shadow: 0px 0px 3px 0 #9e9e9e;
+}
 
+.project-des {
+    margin-top: 10px;
+    margin-left: 20px;
+    list-style-type: disc;
+}
 
 @media screen and (max-width: 768px) {
     header .top-header{
