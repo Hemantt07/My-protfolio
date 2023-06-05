@@ -263,7 +263,6 @@ footer .footer-main .footer-nav li a:hover {
 footer .footer-main .footer-nav li .social-media {
     display: flex;
     justify-content: space-between;
-    margin-top: 15px;
 }
 
 footer .footer-main .footer-nav li .social-media li {
