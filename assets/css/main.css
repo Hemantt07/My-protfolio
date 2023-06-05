@@ -237,11 +237,13 @@ footer .footer-main .footer-nav {
 }
 
 footer .footer-main .footer-nav li {
+    display: flex;
+    display: flex;
     font-size: 23px;
     font-family: 'robotocondes';
     text-align: center;
-    display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 footer .footer-main .footer-nav li.social {
@@ -267,6 +269,7 @@ footer .footer-main .footer-nav li .social-media {
 
 footer .footer-main .footer-nav li .social-media li {
     padding: 0 10px;
+    margin: 0;
 }
 
 footer .footer-main .footer-nav li .social-media a {
